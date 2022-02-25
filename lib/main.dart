@@ -14,8 +14,10 @@ class BusinessCard extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              CircleAvatar(
-                  radius: 50, backgroundImage: AssetImage("images/photo.jpg")),
+              Expanded(
+                child: CircleAvatar(
+                    radius: 85, backgroundImage: AssetImage("images/photo.jpg")),
+              ),
               Text(
                 "Deepraj Baidya",
                 style: TextStyle(
@@ -27,7 +29,7 @@ class BusinessCard extends StatelessWidget {
                 ),
               ),
               Text(
-                "Software Developer",
+                "Just Another Developer",
                 style: TextStyle(
                   fontFamily: "Nunito",
                   fontSize: 23,
@@ -132,5 +134,5 @@ class BusinessCard extends StatelessWidget {
         ),
       ),
     );
-  } 
+  }
 }
